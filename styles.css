@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #2b2b2b;
+    color: white;
+    overflow: hidden;
+  }
+
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff9933;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff7700;
+  }
+  
+  
+  .container {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    top: 20%;
+  }
+  
+  .flag {
+    width: 200px;
+    margin: 0 auto;
+    border: 2px solid black;
+  }
+  
+  .saffron,
+  .white,
+  .green {
+    height: 50px;
+  }
+  
+  .saffron {
+    background: #ff9933;
+  }
+  
+  .white {
+    background: white;
+    position: relative;
+  }
+  
+  .green {
+    background: #138808;
+  }
+  
+  .ashoka-chakra {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 20px);
+    border: 2px solid #0000ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 10s linear infinite;
+  }
+  
+  .ashoka-chakra .circle {
+    width: 20px;
+    height: 20px;
+    background: #0000ff;
+    border-radius: 50%;
+  }
+  
+  .ashoka-chakra .spokes {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .ashoka-chakra .spokes span {
+    position: absolute;
+    width: 2px;
+    height: 21px;
+    background: #0000ff;
+    transform-origin: center bottom;
+    bottom: 19px;
+    left: 19px;
+  }
+  
+  /* Spokes arranged in 15-degree intervals */
+  .ashoka-chakra .spokes span:nth-child(1) { transform: rotate(0deg); }
+  .ashoka-chakra .spokes span:nth-child(2) { transform: rotate(15deg); }
+  .ashoka-chakra .spokes span:nth-child(3) { transform: rotate(30deg); }
+  .ashoka-chakra .spokes span:nth-child(4) { transform: rotate(45deg); }
+  .ashoka-chakra .spokes span:nth-child(5) { transform: rotate(60deg); }
+  .ashoka-chakra .spokes span:nth-child(6) { transform: rotate(75deg); }
+  .ashoka-chakra .spokes span:nth-child(7) { transform: rotate(90deg); }
+  .ashoka-chakra .spokes span:nth-child(8) { transform: rotate(105deg); }
+  .ashoka-chakra .spokes span:nth-child(9) { transform: rotate(120deg); }
+  .ashoka-chakra .spokes span:nth-child(10) { transform: rotate(135deg); }
+  .ashoka-chakra .spokes span:nth-child(11) { transform: rotate(150deg); }
+  .ashoka-chakra .spokes span:nth-child(12) { transform: rotate(165deg); }
+  .ashoka-chakra .spokes span:nth-child(13) { transform: rotate(180deg); }
+  .ashoka-chakra .spokes span:nth-child(14) { transform: rotate(195deg); }
+  .ashoka-chakra .spokes span:nth-child(15) { transform: rotate(210deg); }
+  .ashoka-chakra .spokes span:nth-child(16) { transform: rotate(225deg); }
+  .ashoka-chakra .spokes span:nth-child(17) { transform: rotate(240deg); }
+  .ashoka-chakra .spokes span:nth-child(18) { transform: rotate(255deg); }
+  .ashoka-chakra .spokes span:nth-child(19) { transform: rotate(270deg); }
+  .ashoka-chakra .spokes span:nth-child(20) { transform: rotate(285deg); }
+  .ashoka-chakra .spokes span:nth-child(21) { transform: rotate(300deg); }
+  .ashoka-chakra .spokes span:nth-child(22) { transform: rotate(315deg); }
+  .ashoka-chakra .spokes span:nth-child(23) { transform: rotate(330deg); }
+  .ashoka-chakra .spokes span:nth-child(24) { transform: rotate(345deg); }
+  
+  .message {
+    font-size: 3rem;
+    color: #ff9933;
+    margin-top: 20px;
+  }
+  
+  .subtext {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

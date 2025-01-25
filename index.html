@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Republic Day Wishes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="input-container">
+    <h1>Welcome to Republic Day Celebration!</h1>
+    <p>Enter your name to receive a personalized greeting:</p>
+    <form id="nameForm">
+      <input type="text" id="userName" placeholder="Enter your name" required />
+      <button type="submit">Get Your Wish</button>
+    </form>
+  </div>
+
+  <div class="container" id="wishContainer" style="display: none;">
+    <div class="flag">
+      <div class="saffron"></div>
+      <div class="white">
+        <div class="ashoka-chakra">
+          <div class="circle"></div>
+          <div class="spokes">
+            <!-- Ashoka Chakra Spokes -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="green"></div>
+    </div>
+
+    <h1 class="message" id="greetingMessage"></h1>
+    
+    <p class="subtext">Let us honor our country and its heroes today.</p>
+  </div>
+
+  <script>
+    const nameForm = document.getElementById("nameForm");
+    const userNameInput = document.getElementById("userName");
+    const wishContainer = document.getElementById("wishContainer");
+    const greetingMessage = document.getElementById("greetingMessage");
+    const inputContainer = document.querySelector(".input-container");
+
+    nameForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const userName = userNameInput.value;
+      greetingMessage.textContent = `Happy Republic Day, ${userName}!`;
+      inputContainer.style.display = "none";
+      wishContainer.style.display = "block";
+    });
+  </script>
+</body>
+</html>
